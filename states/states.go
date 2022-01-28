@@ -32,7 +32,7 @@ func main()  {
   cornPosition = "Boat"
   boatPosition = "East"
   position()
-  test()
+  runWorld()
 
 }
 
@@ -100,7 +100,7 @@ func eastSlot(item string) {
   }
 }
 
-func boatSlot(item string) {
+func BoatSlot(item string) {
   if (bSlot1 == ""){
     bSlot1 = item
   } else if (bSlot2 == ""){
@@ -109,7 +109,7 @@ func boatSlot(item string) {
   boat = "\\_" + bSlot1 + "_" + bSlot2 + "_/"
 }
 
-func test() {
+func runWorld() {
   worldSituation = "_" + wSlot1 + "_" + wSlot2 + "_" + wSlot3 + "_" + wSlot4 + "_W|" + wCoast + "_________" + eCoast + "|E_" + eSlot1 + "_" + eSlot2 + "_" + eSlot3 + "_" + eSlot4 + "_\n"
   fmt.Print(worldSituation)
 }
